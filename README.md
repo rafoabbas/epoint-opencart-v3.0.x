@@ -6,7 +6,7 @@ Epoint integration module version 1.0.0 for Opencart 3.0.x
 Information about [epoint.az](https://epoint.az) you can find on the website.
 
 ## Requirements
-- [epoint-opencart-3.0.x.ocmod.zip](http://r2.abbaszade.dev/epoint-woocommerce-9.x.x-main.zip) is tested on v3.0.3.8, v3.0.3.9
+- [epoint-opencart-3.0.x.ocmod.zip](https://r2.abbaszade.dev/epoint-woocommerce-9.x.x-main.zip) is tested on v3.0.3.8, v3.0.3.9
 
 ## Installation Steps
 1. Download the ZIP File
