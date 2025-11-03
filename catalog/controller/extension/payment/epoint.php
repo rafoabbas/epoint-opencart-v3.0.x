@@ -35,6 +35,8 @@ class ControllerExtensionPaymentEpoint extends Controller
 
     public function registerEpoint()
     {
+        $this->load->model('extension/payment/epoint');
+
         require_once DIR_SYSTEM . 'library/epoint.class.php';
 
         $this->epoint = new Epoint();
@@ -49,7 +51,6 @@ class ControllerExtensionPaymentEpoint extends Controller
     public function confirm()
     {
         $this->registerEpoint();
-
 
         $json = [];
 
@@ -110,8 +111,6 @@ class ControllerExtensionPaymentEpoint extends Controller
         $this->registerEpoint();
 
         if ($this->request->server['REQUEST_METHOD'] == 'GET' and isset($this->request->get['order_id'])) {
-
-            $this->load->model('extension/payment/epoint');
 
             $payment_detail = $this->model_extension_payment_epoint->getLog($this->request->get['order_id']);
 
